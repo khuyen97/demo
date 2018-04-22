@@ -10,7 +10,7 @@ group :development do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -46,6 +46,8 @@ gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
 gem 'net-ssh'
 gem 'devise'
+gem 'activeadmin'
+gem 'inherited_resources'
 gem 'gravtastic'
 
 group :development, :test do

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   resources :comments
   resource :user, only: [:edit, :update]
+  
   get 'pages/info'
   resources :people
   resources :ideas
